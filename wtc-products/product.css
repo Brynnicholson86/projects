@@ -1,0 +1,454 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,500;0,600;1,700&display=swap');
+
+body, html, main {
+    font-family: 'Raleway', sans-serif;
+    height: 100%;
+    margin: unset;
+    box-sizing: border-box;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+  
+h1 {
+    margin-top: 125px;
+}
+
+h1, h2 {
+    font-size: 2em;
+    font-weight: 700;
+    text-align: center;
+}
+
+#header > p {
+    text-align: center;
+    font-size: 1.1em;
+    font-weight: 500;
+    font-size: 1.2em;
+    margin: 1%;
+}
+
+#form {
+    text-align: center;
+    margin: 3rem 2rem 2rem 2rem;
+    padding: 10px;
+}
+
+#submit {
+    background-color: #36454F;
+    color: wheat;
+    width: 120px;
+    border-radius: 5px;
+    font-size: 1.2em;
+    padding: 5px;
+}
+
+#email {
+    font-size: 1.5em;
+    width: 325px;
+    margin-top: 15px;
+}
+
+.parallax {
+    /* The image used */
+    background-image: url('turtle-eating-plastic.jpg');
+    /* Full height */
+    height: 100%; 
+    width: 100%;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .parallax2 {
+    /* The image used */
+    background-image: url('https://images.squarespace-cdn.com/content/v1/5e7a0b9afd9b760361706694/1585161905736-75VMLQ7XVJHJR4FCIQXE/ke17ZwdGBToddI8pDm48kDVEj010BbXsLnm509AHjVF7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UWiOgHWyWfC8BdxC_WuXfvhWFtDdzCpB3PJsO8_z2e5f_W3y_yy4MVWH39a9Q36QsA/Plastics+in+Oceans+Drawing.jpg?format=2500w');
+    /* Full height */
+    height: 100%; 
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .parallax3 {
+    /* The image used */
+    background-image: url('010023-01_H_optimized.jpg');
+    /* Full height */
+    height: 500px; 
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+.div-info {
+    width: 100%;
+    height: auto;
+    margin: 1% 2% 1% 2%;
+    text-align: center;
+}
+
+#Eco_Pals {
+    margin: 1vw 1vh 1vw vh;
+    display: block;
+}
+
+.container {
+display: flex;
+justify-content: space-between;
+margin: 1%;
+height: 300px;
+margin-bottom: 3%;
+}
+
+.container-coffee {
+    display: flex;
+    justify-content: space-between;
+    margin: 1%;
+    height: 500px;
+    margin-bottom: 2%;
+}
+
+.container .product-box {
+    width: 24%;
+}
+
+.product-box {
+    border: black solid 1px;
+    height: 300px;
+    width: 200px;
+    width: 24%;
+
+}
+
+.product-box-coffee {
+    border: black solid 1px;
+    flex: 0 0 auto;
+    height: 454px;
+    width: 200px;
+}
+
+.price-label {
+    width: 100%;
+    background-color: silver;
+    height: 20%;
+    text-align: center;
+    padding-top: 10px 0px 0px 10px;
+}
+
+.price-label1 {
+    width: 100%;
+    background-color: silver;
+    height: 10%;
+    text-align: center;
+    padding-top: 10px 0px 0px 10px;
+    box-sizing: border-box;
+}
+.buy {
+    font-family: 'Raleway';
+    font-weight: bold;
+    width: 100%;
+    height:10%;
+    border: none;
+    font-size: 1.2em;
+}
+
+.buy1 {
+    font-family: 'Raleway';
+    font-weight: bold;
+    width: 100%;
+    height:20%;
+    border: none;
+    font-size: 1.5em;
+
+}
+
+.product-img1 {
+    background-image: url('https://images.squarespace-cdn.com/content/v1/5e7a0b9afd9b760361706694/1592497322790-JDACA72WZZM6YHAZVJD0/ke17ZwdGBToddI8pDm48kFQQgP34qnCpeHaeAOzTt7pZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZamWLI2zvYWH8K3-s_4yszcp2ryTI0HqTOaaUohrI8PICHnXC1b9smDvYLPdL-DS7U1pkhCtl83kemXd5r3C5ngKMshLAGzx4R3EDFOm1kBS/Octopus+-+Reg.jpg?format=750w');
+    background-size: 75%;
+    background-repeat: no-repeat;
+    width: 100%; 
+    height: 70%;
+    background-position: center;
+}
+
+.product-img2 {
+    background-image: url('https://images.squarespace-cdn.com/content/v1/5e7a0b9afd9b760361706694/1592497020510-FSQCVCMRY332UMKU81UQ/ke17ZwdGBToddI8pDm48kFQQgP34qnCpeHaeAOzTt7pZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZamWLI2zvYWH8K3-s_4yszcp2ryTI0HqTOaaUohrI8PICHnXC1b9smDvYLPdL-DS7U1pkhCtl83kemXd5r3C5ngKMshLAGzx4R3EDFOm1kBS/Harbor+Seal+-+Lg.jpg?format=750w');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 70%;
+}
+
+.product-img3 {
+    background-image: url('https://images.squarespace-cdn.com/content/v1/5e7a0b9afd9b760361706694/1585077357067-E3BO6KNRRSCOQBIFUGDA/ke17ZwdGBToddI8pDm48kFQQgP34qnCpeHaeAOzTt7pZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZamWLI2zvYWH8K3-s_4yszcp2ryTI0HqTOaaUohrI8PICHnXC1b9smDvYLPdL-DS7U1pkhCtl83kemXd5r3C5ngKMshLAGzx4R3EDFOm1kBS/Gray+Wolf+Large.jpg?format=750w');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 70%;
+}
+
+.product-img4 {
+    background-image: url('https://images.squarespace-cdn.com/content/v1/5e7a0b9afd9b760361706694/1585077228350-GHXB0ZJAN21G0MPKHM5C/ke17ZwdGBToddI8pDm48kFQQgP34qnCpeHaeAOzTt7pZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZamWLI2zvYWH8K3-s_4yszcp2ryTI0HqTOaaUohrI8PICHnXC1b9smDvYLPdL-DS7U1pkhCtl83kemXd5r3C5ngKMshLAGzx4R3EDFOm1kBS/Giraffe+Large.jpg?format=750w');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 70%;
+}
+
+.product-img5 {
+    background-image: url('ndaba-zebra.jpg');
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 70%;
+}
+
+.product-img6 {
+    background-image: url('ndaba-tiger.jpg');
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 70%;
+}
+
+.product-img7 {
+    background-image: url('ndaba-octo.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 70%;
+}
+
+.product-img8 {
+    background-image: url('ndaba-elephant.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 70%;
+}
+
+.product-img9 {
+    background-image: url('coffee-orang-front.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 70%;
+}
+
+.product-img10 {
+    background-image: url('coffee-dog-front.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 70%;
+}
+
+.product-img11 {
+    background-image: url('coffee-gorilla-front.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 70%;
+}
+
+.product-img12 {
+    background-image: url('coffee-sloth-front.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 70%;
+}
+
+#video {
+margin: 2% 0%;
+border: black solid 2px;
+border-radius: 10px;
+}
+
+ul, li{
+    list-style:none;
+    margin:0; 
+    padding:0;
+    display: flex;
+    flex: 1;
+    align-self: center;
+}
+
+#nav-bar {
+    background: #36454F;
+    color: wheat;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+}
+
+.nav-link {
+    text-decoration: none;
+    padding: 10px 20px 10px 20px;
+    color: wheat;
+}
+
+#header-img2 {
+width: 60px;
+}
+
+footer {
+    position: fixed;
+    background: #36454F;
+    padding-left: 1%;
+    color: wheat;
+    font-size: 1.4vw;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+}
+
+#wai-email {
+    color: wheat;
+}
+
+footer>i, span {
+padding: .5%;
+}
+
+.parallax, .parallax2 {
+    height: 600px;
+}
+
+a:hover, button:hover, #submit:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.div-info p {
+  margin: 0 2%;
+  line-height: 1.6;
+}
+
+@media only screen and (max-width: 820px) {
+  .container-coffee {
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    flex: 0 0 200px;
+    height: 1200px;
+  }
+  .product-box-coffee {
+    margin: 10px 40px;
+  }
+}
+
+
+
+@media only screen and (max-width: 575px) {
+    .price-label, .buy {
+        font-size: .7em;
+    }
+    .container {
+        margin: 60px 10%;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        height: 750px;
+    }
+    .product-box {
+        flex: 1 0 40%;
+        border: black solid 1px;
+        height: 300px;
+        margin: 2em;
+        margin: 0 4%;
+    }
+    #video {
+        max-width: 450px;
+        margin-top: 30px;
+    }
+    ul, li {
+        flex-direction: column;
+    }
+    h1 {
+        margin-top: 50px;
+    }
+    .parallax2, .parallax3 {
+        height: 300px;
+    }
+    .parallax {
+        height: 300px;
+    }
+    #nav-bar {
+        position: relative;
+    }
+    #submit {
+        margin: 10px;
+  }
+    footer {
+      display: flex;
+      flex-direction: column;
+      font-size: .75em;
+      position: fixed;
+    }
+    .footer-flex {
+      display: flex;
+      justify-content: center;
+    }
+    .footer-flex i {
+      padding: 5px;
+    }
+    .container-coffee {
+      height: 2450px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+  .product-box {
+      flex: 1 1 200px;
+      margin: 2%;
+  }
+  .parallax2, .parallax3 {
+      margin-top: 50px;
+  }
+  footer {
+    display: flex;
+    flex-direction: column;
+    font-size: .75em;
+    position: fixed;
+  }
+  #video {
+    max-width: 350px;
+  }
+  .price-label, .buy {
+    font-size: .7em;
+  }
+  .container-coffee {
+      flex-direction: column;
+      align-items: center;
+  }
+  .container {
+      display: flex;
+      margin: 1% 1% 3% 1%;
+      flex-wrap: wrap;
+      flex: 0 0 40%;
+      height: auto;
+  }
+  input {
+    margin-top: 15px;
+  }
+  .product-img2, .product-img3, .product-img4, .product-img7, .product-img5, .product-img8 {
+    background-position: center;
+  }
+  #email {
+    margin-top: 15px;
+    width: 250px;
+    font-size: 1em;
+  }
+} 

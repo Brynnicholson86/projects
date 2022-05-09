@@ -1,0 +1,18 @@
+table, th, tbody, tr, td {
+    border: 2px solid black;
+    padding: 10px;
+    border-collapse: collapse;
+}
+  
+code {
+    background-color: black;
+    color: whitesmoke;
+}
+
+pre {
+    color: black;
+}
+
+.codewhite {
+    color: whitesmoke;
+}

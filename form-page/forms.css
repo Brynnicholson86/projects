@@ -1,0 +1,108 @@
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(
+        133deg,        
+        rgba(220, 229, 231, 0.8),
+        rgba(71, 137, 153, 0.8)
+        ),
+        url(https://images.unsplash.com/photo-1540776135613-1ce741484f98?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: -1;
+}
+
+html {
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 500;
+}
+header {
+    color:black;
+    margin: 0 auto;
+    margin-top: 2em;
+    text-align: center;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#description {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+input, select {
+    border-radius: 10px;
+    border: rgba(220, 229, 231, 0.8) solid 2px;
+}
+
+#email, #phone, #name, #number, #phone {
+    width: 90%;
+    margin: auto;
+}
+
+#dropdown {
+    margin: auto;
+    width: 92%;
+}
+
+#survey-form {
+    margin-top: 50px;
+	width: 55%;
+	margin: 0 auto;
+	margin-bottom: 50px;
+	padding-bottom: .5em;
+    background-color: rgba(87, 89, 90, 0.75);
+    border-radius: 20px;
+    color: whitesmoke;
+}
+
+.input-checkbox, .input-radio {
+    height: 18px;
+    width: 18px;
+}
+
+div {
+	padding: 1em 1.5em 1em 1.5em;
+	display: flex;
+	flex-direction: column;
+}
+
+.question {
+    padding: 10px 2px;
+}
+
+textarea {
+    height: 12vh;
+    resize: none;
+    border: rgba(220, 229, 231, 0.8) solid 2px;
+    border-radius: 20px;
+}
+
+button {
+    color: black;
+    width: 15vw;
+    margin: 1.2em auto;
+    font-size: 16px;
+    border-radius: 20px;
+    border: none;
+    background-color: rgba(220, 229, 231, 0.8);
+    transition: .8s;
+}
+button:hover {
+    background-color: rgba(71, 137, 153, 0.8);
+    color: whitesmoke;
+}
+
+
+ 
+  @media (max-width: 700px) {
+    form {
+      padding: 1.3rem;
+      min-width: 350px; 
+    }
+}

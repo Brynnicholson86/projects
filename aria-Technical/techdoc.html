@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="techdoc.css">
+    <title>ARIA Summary Documentation</title>
+</head>
+<body>
+    <nav id="navbar"> <!--Navbar must be on the left side, sticky, with page hyperlinks-->
+        <header id="nav-header" tabindex="1">ARIA Core Basics</header>
+        <ul>
+            <li class="nav-li">
+                <a class="nav-link" href="#Introduction">Introduction</a>
+            </li>
+            <li class="nav-li">
+                <a class="nav-link" href="#Navigation_Tags">Navigation Tags</a>
+            </li>
+            <li class="nav-li">
+                <a class="nav-link" href="#Labels_and_Fieldsets">Labels and Fieldsets</a>
+            </li>
+            <li class="nav-li">
+                <a class="nav-link" href="#Proper_Color_Contrast">Proper Color Contrast</a>
+            </li>
+
+            <li class="nav-li">
+                <a class="nav-link" href="#Descriptive_Text">Descriptive Text</a>
+            </li>
+        </ul>
+    </nav>
+    <main id="main-doc">
+    <!--Must contain 5 code elements, 5 li elements, 10 paragraphs-->
+        <section class="main-section" id="Introduction">
+            <header>Introduction</header>
+            <hr>
+            <p>
+                ARIA stands for Accessible Rich Internet Applications. This allows standards in semantics for web accessibility. What this means is there is a right way to create your HTML and CSS code to allow the 15% of people in the world who have a disability a way to access and browse a website. The technical documentation that follows will provide a basic instructional list on how to meet ARIA standards by using the appropriate code, provide text alternatives for images, and create a website that can be navigated by keyboard. The 5 areas covered focused on in this document (which is not exhaustive on the subject) will give you a head start on ensuring you have a website that everyone can access. For more information, check out at <a href=” https://www.w3.org/WAI/standards-guidelines/aria/" target=”_blank”>W3.org</a>.
+            </p>
+
+        </section>
+        <section class="main-section" id="Navigation_Tags">
+            <header>Navigation Tags</header>
+            <hr>
+            <p>While all the tags below function exactly the same as a &lt;div> tag, they allow assistive technologies to recognize their functions on your website much more easily, and can even allow the user to jump to the appropriate section desired.</p>
+            <ul>
+                <li>Nav Landmark</li>
+                <p>Screen reader navigation can be made easier by putting the site navigation links in a &lt;nav> tag. This is the nagivation header that is typically repeated on multiple pages of a website. Allowing users to navigate to the navigational links quickly can save time and effort.</p>
+
+                <li>Header Landmark</li>
+                    <p>A &lt;Header> tag will typically be at the top of a page to introduce the content of the page, or perhaps the content of a section. It goes in the body of the page before the main content. This landmark would allow users to navigate to that content quickly. Note that this has nothing to do with the 'Head' tag which holds the meta information and unseen data of the page.</p>
+
+                <li>Main Element</li>
+                <p>Assistive devices can jump to the "main" content included on your site inside your &lt;Main> tag. Note that you should only have one &lt;Main> tag per page for clarity and functionality.</p>
+
+                <li>Footer Landmark</li>
+                <p>A &ltfooter> tag is typically at the bottom of the page and includes any copyright information as well as any links. It can be sticky or scrolled to the bottom, but again can be navigated to quickly with assistive technologies if needed.</p>
+
+                <li>Article vs Div Element vs Section</li>
+                    <p>A div tag can be used for just about anything including containers or divisions for all sorts of content. However, when you're creating an article that is secondary content outside of the main content that is self-contained or links to other content, it is appropriate to use the &lt;article> tag. &alt:section> tags are also key to grouping content in the main that is related and of the same theme. Using sections and articles instead of divs will allow users of assistive technologies to follow the flow of the page in an optimal manner.</p>
+
+                <li>Tab Index</li>
+                    <p>Using the tabindex attribute can also assign where the keyboard tab key focuses if the HTML order is not the right sequence as the page due to CSS. You can also use it to allow keyboard focus on areas of text such as instructions that you want the user to focus on first before continuing. For example, take the title of the menu into consideration. I've set the tab index to 1, so it is focusable, and the very first keyboard focus of the page. Here's the code for that:</p>
+                    <code> &lt;header id="nav-header" tabindex="1">ARIA Core Basics&lt;/header></code>
+                    <p>If you hit tab, you can try this out for yourself!</p>
+                
+            </ul>    
+        </section>
+
+        <section class="main-section" id="Labels_and_Fieldsets">
+            <header>Labels and Fieldsets</header>
+            <hr>
+                <p>All forms require label tags on each choice in a form. This helps label the item and make it easy for screen-readers to identify the value for each choice. It's also beneficial to use a fieldset tag with a legend for exclusive choice radio button options. This helps distinguish the options.</p>
+                <code>
+                    <form>
+                        <fieldset>
+                            <legend>How did you hear about us?</legend>
+                            <label for="facebook"> <input id="facebook" name="hearabout" value="facebook" type="radio" class="input-radio">Facebook</label>
+                            <label for="linked-in"><input id="linked-in" name="hearabout" value="linked-in" type="radio" class="input-radio">Linked-In</label>
+                            <label for="local-paper"> <input id="local-paper" name="hearabout" value="local-paper" type="radio" class="input-radio">Local paper advertisements</label>
+                            <label for="this-website"><input id="this-website" name="hearabout" value="this-website" type="radio" class="input-radio">This Website</label>
+                            <label for="word-of-mouth"> <input id="word-of-mouth" name="hearabout" value="word-of-mouth" type="radio" class="input-radio" checked>Word of Mouth</label>
+                        </fieldset>
+                    </form>
+                </code>
+                <p>Here's the code for the above Fieldset:</p>
+                <code>
+                    &lt;form>
+                        &lt;fieldset>
+                            &lt;legend>How did you hear about us?&lt;/legend>
+                            &lt;label for="facebook"> &lt;input id="facebook" name="hearabout" value="facebook" type="radio" class="input-radio">Facebook&lt;/label>
+                            &lt;label for="linked-in">&lt;input id="linked-in" name="hearabout" value="linked-in" type="radio" class="input-radio">Linked-In&lt;/label>
+                            &lt;label for="local-paper"> &lt;input id="local-paper" name="hearabout" value="local-paper" type="radio" class="input-radio">Local paper advertisements&lt;/label>
+                            &lt;label for="this-website">&lt;input id="this-website" name="hearabout" value="this-website" type="radio" class="input-radio">This Website&lt;/label>
+                            &lt;label for="word-of-mouth">&lt;input id="word-of-mouth" name="hearabout" value="word-of-mouth" type="radio" class="input-radio" checked>Word of Mouth</label>
+                        &lt;/fieldset>
+                    &lt;/form>
+                </code>
+                <p>Every form element should be inside or at least utilizing a label element to help identify the input element.</p>
+        </section>
+
+        <section class="main-section" id="Proper_Color_Contrast">
+            <header>Proper Color Contrast</header>
+             <hr>
+             <p>Color Contrast is a subtle yet significant way you can help make your website accessible to everyone, especially those with color blindness or poor vision. Check out the below code and see if it's easy for you to read:</p>
+             <code id="contrast-code">While this might add unique flair, it can make the text hard to read even under normal circumstances.</code>
+             <p>What you want instead is a high contrast. WCAG's AA rating recommends at least 4.5 to 1 ratio for regular text to background color. To provide an example, black on white is a 21:1 ratio. Try a contract calculation tool such as <a href="https://webaim.org/resources/contrastchecker/" target="_blank">Web Aim's Contrast Checker</a>.
+            Besides contrast, you may also want to make sure the hues are not neighbors on the color wheel to avoid any issues a user may have with color blindness.</p>
+        </section>
+
+        <section class="main-section" id="Descriptive_Text">
+            <header>Descriptive Text</header>
+            <hr>
+                <p>
+                    Individuals who may have visual impairments won’t be able to see your photos or images on your website. A screen reader converts the image elements to text, provided you’ve put in an alt attribute. All image tags should have an alt text if they are content that provide any critical information you are trying to convey and not just a pure decoration or background. High quality alt text provides a brief desctription of the image. This will also provide the text if the image doesn’t load properly so a visitor to the website can see the text instead of nothing. A good alt description looks like the following: 
+                </p>
+                <code>
+                     &lt;img src="Logo_1059.png" alt="Organization's Logo Crest">
+                     
+                     <img src="Logo_1059.png" alt="Organization's Logo Crest">
+                </code>
+                <p>This would allow the screen reader to read aloud your Organization's Emblem or Logo as spoken text. The second line demonstrates what that same code would look like if your image link did not load properly. By creating descriptive 'alt' texts for all your website images, you can allow those with visual impairments to understand websites and their images in context.</p>
+
+                <p>Another important way you can convey meaning with descriptive text is when you write an anchor tag hyperlink. If you write it as a descriptive link instead of 'Click here' it will give more information to the user and they will be less reliant on the surrounding context and can use the hyperlink with their screen readeer. You can even set up access keys for your hyperlinks to ensure the user can just hit the hotkey to access. An Access key to go to <a href="https://www.youtube.com/" target ="_blank" accesskey="y">Youtube.com</a> allowing a "y" hotkey looks like this:
+                </p>
+                <code>&lt;a href="www.youtube.com" target ="_blank" accesskey="y">Youtube.com&lt;/a></code>
+                <p>Feel Free to give it a try now! <em>Note that the key that allows you to trigger the accesskey varies by browser. For Google Chrome on Windows it's alt + accesskey.</em></p>
+        </section>
+    </main>
+
+    <footer>
+       <p>&copy; Copyright Bryn Nicholson 2020 - HTML-CSS Learning Portfolio</p> 
+    </footer>
+</body>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</html>

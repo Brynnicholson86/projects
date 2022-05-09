@@ -1,0 +1,267 @@
+/*Universal Styles */
+
+body, html, main {
+  font-family: 'Raleway', sans-serif;
+  margin: unset;
+  padding: 0;
+  box-sizing: border-box;
+  max-width: 100%;
+  background-color: #FCF6CF;
+}
+
+*, *:before, *:after {
+box-sizing: inherit;
+}
+
+
+/* Header & Banner */
+
+nav > ul, li{
+  list-style:none;
+  margin:0; 
+  padding:0;
+  display: flex;
+  flex: 1;
+  align-self: center;
+  justify-content: space-around;
+}
+
+
+h1, h2 {
+  font-size: 3em;
+}
+
+nav {
+  height: 68px;
+  background: teal;
+  display: flex;
+  align-items: center;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.container-menu {
+  display: inline-block;
+  cursor: pointer;
+  margin: 10px 15px;
+}
+
+.nav-link {
+  display: none;
+}
+
+header {
+  position: relative;
+  font-size: 1em;
+  font-weight: 600;
+}
+
+.banner {
+  background: teal;
+  background: linear-gradient(rgba(46, 41, 41, 0.5), rgba(56, 51, 51, 0.5)), url('photo-1535407338890-e52101286bdf.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: antiquewhite;
+  position: relative;
+  width: 100vw;
+  height: 50vh;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#aboutme {
+  background: #DB2545;
+  color: antiquewhite;
+  bottom: 100px;
+  right: 25px;
+  font-size: 1.3em;
+}
+
+span {
+  color: #DB2545;
+  font-size: larger;
+}
+
+/*Grid Gallery */
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: 400px;
+  gap: 75px; /* minmax(100px, auto); , or use double entry as 'tracking for two sizes. */
+  justify-items: center;
+  margin-top: 75px;
+  position: relative;
+}
+
+button.landscape, button.portrait {
+  position: relative;
+  left: 73px;
+  top: 90px;
+  padding: 17px;
+  font-size: 1em;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button.landscape {
+  left: 92px;
+}
+
+/* Product Images */
+
+.frame-landscape {
+  width: 250px;
+  height: 197px;
+  position: relative;
+  z-index: 2;
+}
+
+.frame-portrait {
+  position: relative;
+  z-index: 2;
+  width: 197px;
+  height: 250px;
+}
+
+.mat-portrait {
+  width: 290px;
+  height: 340px;
+  background-color: whitesmoke;
+  position: relative;
+  z-index: 10;
+  border: solid black 25px;
+  box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 13px 38px 45px 16px rgba(23, 48, 255, 0);
+}
+
+.mat-landscape {
+  width: 340px;
+  height: 290px;
+  background-color: whitesmoke;
+  position: relative;
+  z-index: 10;
+  border: solid black 25px;
+  box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 13px 38px 45px 16px rgba(23, 48, 255, 0);
+}
+
+.item-portrait {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  top: 20px;
+  left: 20px;
+  box-shadow: inset 0 0 7px #000000;
+}
+
+
+.item-landscape {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  top: 20px;
+  left: 20px;
+  box-shadow: inset 0 0 7px #000000;
+}
+
+.one {
+  background-image: url('item1.png');
+}
+
+.two {
+  background-image: url('item-2.png');
+}
+
+.three {
+  background-image: url('item-3.png');
+}
+
+.four {
+  background-image: url('item-4.png');
+}
+
+.five {
+  background-image: url('item-5.png');
+}
+
+.six {
+  background-image: url('item-6.png');
+}
+
+.seven {
+  background-image: url('item-7.png');
+}
+
+.eight {
+  background-image: url('item-8.png');
+}
+
+.nine {
+  background-image: url('item-9.png');
+}
+
+.ten {
+  background-image: url('item-10.png');
+}
+
+.eleven {
+  background-image: url('item-11.png');
+}
+
+.twelve {
+  background-image: url('item-12.png');
+}
+
+/* Footer and Contact */
+
+footer {
+  position: relative;
+  margin-top: 4em;
+  background: teal;
+  text-align: center;
+  left: 0;
+  bottom: 0;
+  height: 3em;
+  display: flex;
+  align-items: center;
+  color: antiquewhite;
+}
+
+footer p {
+  margin: auto;
+}
+
+footer a {
+  color: #DB2545;
+}
+
+/* Media Requests */ 
+
+@media only screen and (min-width: 800px) {
+  .container {
+    grid-template-columns: 1fr 1fr;
+  }
+  .bar1, .bar2, .bar3 {
+    display: none;
+  }
+  .nav-link {
+    display: flex;
+    text-decoration: none;
+    color: #DB2545;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .container {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 75px; /* minmax(100px, auto); , or use double entry as 'tracking for two sizes. */
+  }
+}

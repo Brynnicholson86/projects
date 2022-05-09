@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+html {
+	box-sizing: border-box;
+}
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+.main-wrapper {
+	max-width:1280px;
+	margin:auto;
+	padding:20px;
+	background:#f9f9f9;
+}
+.nav{
+	display:flex;
+}
+.nav ul {
+	margin:0 3rem 0 0;
+	padding:0;
+	list-style:none;
+	display:flex;
+	flex:1 0 0%;
+	justify-content:space-between;
+}
+.nav ul a {
+	display:block;
+	padding:5px 10px;
+}
+.nav_login{
+	margin-left:auto;
+}
+</style>
+</head>
+
+<body>
+<div class="main-wrapper">
+  <header>
+    <nav class="nav">
+      <ul>
+        <li><a href="index.php">Home</a></li>
+        <li><a href="about.php">About</a></li>
+        <li><a href="primer.php">Primer Level</a></li>
+        <li><a href="level1.php">Level1</a></li>
+        <li><a href="level2.php">Level2</a></li>
+        <li><a href="level3.php">Level3</a></li>
+      </ul>
+      <div class="nav_login">
+        <form action="includes/login.php" method="POST">
+          <input type="text" name="uid" placeholder="Username/e-mail">
+          <input type="password" name="password"  placeholder="password">
+          <button type="submit" name="submit">Login</button>
+        </form>
+        <a href="signup.php">Sign up</a> </div>
+    </nav>
+  </header>

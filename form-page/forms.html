@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="forms.css">
+    <title>Interested in an Online Presence? Free Quote</title>
+</head>
+<body>
+    
+    <header>
+        <h1 id="title">Need a web presence for your business? Get a free quote. </h1>
+        <p id="description">Get the best website for your business on the Oregon Coast or around the Northwest. Locally Built, Locally Maintained.</p>
+    </header>
+
+<div class="container"></div>
+    <form id="survey-form">
+        <div class="form-content">
+            <label class="question" id="name-label" for="name">Full Name:</label>
+                <input 
+                    type="text" 
+                    name="name"
+                    id="name"
+                    placeholder="Enter your Name"
+                    required
+                    />
+            <label class="question" id="email-label" for="email">Email:</label>
+                <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    required
+                    placeholder="Enter your Email Address"
+                    />
+            <label class="question" for="phone">Enter your phone number:</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required placeholder="541-867-5309">
+            <label class="question" id="number-label" for="number">What's your ideal budget?</label>
+                <input
+                    type="number"
+                    name="budget"
+                    id="number"
+                    placeholder="Budget - e.g. $1000, $3000, $5000"
+                    min="300"
+                    max="000"
+                    />
+            <p>What is the purpose of the website?</p>
+            <select id="dropdown" name="purpose" required>
+                <option disabled selected value>Select an Option or Industry</option>
+                <option>Personal Page</option>
+                <option>Small Retail Business</option>
+                <option>Restaurant</option>
+                <option>B&B or Hotel</option>
+                <option>Government or non-Profit</option>
+            </select>
+            <div>
+            <p>What kind of features are you looking to add? Check all that apply.</p>
+                <label>
+                    <input 
+                    name="prefer"
+                    value="social-media"
+                    type="checkbox"
+                    class="input-checkbox"
+                    />Social Media Presence
+                </label>
+                <label>
+                    <input 
+                    name="prefer"
+                    value="support"
+                    type="checkbox"
+                    class="input-checkbox"
+                    />Premium Ongoing Support
+                </label>
+                <label>
+                    <input 
+                    name="prefer"
+                    value="design"
+                    type="checkbox"
+                    class="input-checkbox"
+                    />Full Design Package
+                </label>
+                <label>
+                    <input 
+                    name="prefer"
+                    value="hosting"
+                    type="checkbox"
+                    class="input-checkbox"
+                    />Hosting
+                </label>
+                <label>
+                    <input 
+                    name="prefer"
+                    value="checkout"
+                    type="checkbox"
+                    class="input-checkbox"
+                    />Online Shopping Cart or Shopify
+                </label>
+                <label>
+                    <input 
+                    name="prefer"
+                    value="seo"
+                    type="checkbox"
+                    class="input-checkbox"
+                    />SEO Optimization
+                </label>
+            </div>
+            <div>
+                <p>How did you hear about us?</p>
+                <label> <input name="hearabout" value="facebook" type="radio" class="input-radio">Facebook</label>
+                <label> <input name="hearabout" value="linkedin" type="radio" class="input-radio">LinkedIn</label>
+                <label> <input name="hearabout" value="local-paper" type="radio" class="input-radio">Local paper advertisements</label>
+                <label> <input name="hearabout" value="this-website" type="radio" class="input-radio">This Website</label>
+                <label> <input name="hearabout" value="word-of-mouth" type="radio" class="input-radio" checked>Word of Mouth</label>
+            </div>   
+            <p>Any other Requests or comments?</p>
+            <textarea
+                id="comments"
+                class="input-textarea"
+                name="comment"
+                placeholder="  Enter your comments here..."
+            ></textarea>
+
+            <button id="submit">Submit</button>
+
+        </div>
+    </form>
+</div>
+</body>
+
+
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</html>
+
+<!-- https://images.unsplash.com/photo-1540776135613-1ce741484f98?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80 -->
+
+<!-- https://images.unsplash.com/photo-1567278527443-ffac43e4a0f9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80 -->

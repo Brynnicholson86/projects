@@ -1,0 +1,174 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.textdiv {
+    border: grey solid 1px;
+    border-radius: 15px;
+    padding-left: 1.66%;
+    margin: 20px 20px 5px 20px;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+}
+
+h1 {
+    font-weight: 700;
+    text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+                0px 8px 13px rgba(0,0,0,0.1),
+                0px 18px 23px rgba(0,0,0,0.1);
+    margin: 0;
+}
+
+hr { 
+    margin: 0;
+    padding: 0;
+    border: black solid 1px;
+}
+
+#jt {
+    margin-top: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#leftbox {
+    width: 50%;
+}
+
+#leftbox {
+    width: 50%;
+}
+
+nav {
+    background: linear-gradient(180deg, #4263bd, #84b5ef, #638cf7, #cee7ff);
+    box-shadow: 0px 1px 2px black;
+    border: #4263bd solid 1px;
+}
+nav ul {
+    list-style-type: none;
+    margin:0 0 0 0;
+    display:flex;
+    justify-content:center;
+}
+
+nav li {
+    display: inline-block;
+    padding: 10px;
+    margin-left: 1vh;
+    border-right: 1px solid #bbbbbb;
+
+
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+
+
+.footerdiv {
+    position: relative;
+    height: 30px;
+    background: #1f1f2e;
+    color: whitesmoke;
+    width: 100%;
+    margin-bottom: 0%;
+}
+
+
+#apple1 {
+    height: 23px;
+    width: 19px;
+    left:-2px; 
+    top: 6px;
+    background: linear-gradient(180deg, green 2px, yellow, red, purple, blue);
+    position: relative;
+    clip-path: polygon(99% 74%, 75% 99%, 53% 90%, 29% 100%, 16% 83%, 2% 64%, 6% 37%, 25% 14%, 48% 24%, 79% 14%, 96% 26%, 78% 51%);
+    z-index: 4;
+}
+
+#apple2 {
+    height: 8px;
+    width: 5px;
+    left: 5px; 
+    top: -20px;
+    transform: rotate(23deg);
+    background: green;
+    position: relative;
+    border-radius: 50%;
+    z-index: 4;
+}
+
+@media (max-width: 800px){
+    #jt {
+        flex-direction: column-reverse;
+    }
+    #img-div>img {
+            max-width: 50%;
+            height: auto;
+            margin: 25px 0;
+        }
+    nav li {
+            font-size: .7em;
+        }    
+}
+
+#button1 {
+    background-color: #1f1f2e;
+    color: whitesmoke;
+    border-radius: 20px;
+    font-weight: 600;
+    transition: .5s;
+}
+
+#button1:hover {
+    background-color: #638cf7;
+    color: black;
+}
+
+/*
+.videodiv {
+    display: flex;
+    margin: 50px auto;
+} */
+
+.bottom-img {
+    width: 75%;
+    height: auto;
+}
+
+#img-div {
+    text-align: center;
+    margin: 25px 25px;
+}
+
+/*
+@media (min-width: 500px){
+.container{
+  grid-template-areas:
+    "header header header"
+    "advert content advert"
+    "footer footer footer";
+{
+*/
+
+/*.container {
+    display: grid;
+    grid-template-areas:
+        "header"
+        "advert"
+        "advert"
+        "content"
+        "content"
+        "footer"
+}
+*/

@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="cheatsheet.css">
+    <title>Documentation</title>
+<head>
+
+<h1>Bryn Nicholson's Master Cheat Sheet for HTML, CSS, & JS</h1>
+
+<h2>HTML</h2>
+
+<table class='borderstyle'>
+  <thead>
+    <tr>
+      <td>Tag</td>
+      <td>Description</td>
+      <td><code>&ltCode&gt</code></td>
+      <td>Notes:</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>HR</td>
+      <td>Horizontal Ruler</td>
+      <td><code>&lthr&gt</code></td>
+      <td>Thin Line across Page</td>
+    </tr>
+    <tr>
+        <td>BR</td>
+        <td>line break</td>
+        <td><code>&ltbr&gt</code></td>
+        <td>Break text in h1, p etc. tags.</td>
+      </tr>
+      <tr>
+        <td>Embed</td>
+        <td>Useful for any kind of media; especially a gif</td>
+        <td><code>&ltembed&gt</code></td>
+        <td><embed type="video/webm" src="video.mp4" width="200" height="100"></td>
+      </tr>
+      <tr>
+        <td>Details & Summary</td>
+        <td>Expandable Arrowdown Box</td>
+        <td><code>&ltdetails&gt &ltsummary&gt &ltp&gttext here&lt/p&gt   &lt/summary&gt &lt/details&gt  </code></td>
+        <td><details>
+            <summary>Epcot Center</summary>
+            <p>test</p>
+          </details></td>
+      </tr>
+      <tr>
+        <td>Video Tag</td>
+        <td>Any Video</td>
+        <td><code>      
+            &ltvideo width="320" height="240" controls&gt
+                &ltsource src="movie.mp4" type="video/mp4"&gt
+                &ltsource src="movie.ogg" type="video/ogg"&gt<br>
+                Your browser does not support the video tag.
+            &lt/video&gt
+        </code></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>'Title' Attribute</td>
+        <td>Creates a hover tooltip</td>
+        <td><code>      
+            &lt/html element title="Tooltip here"&gt
+        </code></td>
+        <td title="Cooltip">title="CoolTip"</td>
+      </tr>
+      <tr>
+        <td>Superscript</td>
+        <td>Creates a smaller font like E=MC2</td>
+        <td><code>      
+            &ltsub&gtsubscript&lt/sub&gt
+        </code></td>
+        <td><p>This text contains <sub>subscript</sub> text.</p></td>
+      </tr>
+      <tr>
+        <td>Style</td>
+        <td>In-Line HTML editing</td>
+        <td><code>      
+            &ltstyle&gt
+                h1 {color:red;}
+                p {color:blue;}
+            &lt/style&gt
+        </code></td>
+        <td>Just like in CSS except inside the tag;</td>
+      </tr>
+      <tr>
+        <td>Audio & Source</td>
+        <td>Audio Element</td>
+        <td><code>      
+            &ltaudio controls&gt
+                &ltsource src="horse.ogg" type="audio/ogg"&gt
+                &ltsource src="horse.mp3" type="audio/mpeg"&gt
+                Your browser does not support the audio element.
+            &lt/audio&gt
+        </code></td>
+        <td>Fallback for Video & Audio where needed, along with support statement.</td>
+      </tr>
+      <tr>
+        <td>Progress / Meter</td>
+        <td>Progress (task completion) & Meter (Relevance, comparison, etc.)</td>
+        <td><code>      
+            &ltlabel for="file">Downloading progress:&lt/label>
+            &ltprogress id="file" value="32" max="100"> 32% &lt/progress>
+            <br>
+            &ltlabel for="disk_d">Disk usage D:&lt/label>
+            &ltmeter id="disk_d" value="0.6">60%&lt/meter> 
+        </code></td>
+        <td>
+            <label for="file">Downloading progress:</label>
+            <progress id="file" value="32" max="100"> 32% </progress>
+            <br>
+            <label for="disk_d">Disk usage D:</label>
+            <meter id="disk_d" value="0.6">60%</meter>
+        </td>
+      </tr>
+      <tr>
+        <td>pre</td>
+        <td>Preformatting Tag (as is)</td>
+        <td><code>      
+            <pre>
+                Text in a pre element
+                is displayed in a fixed-width
+                font, and it preserves
+                both      spaces and
+                line breaks
+            </pre>
+        </code></td>
+        <td>No need for linebreaks or escape characters.</td>
+      </tr>
+
+  </tbody>
+  <thead><tr><td colspan="4"><h3>Semantic HTML</h3></td></tr></thead>
+  <tbody>
+      <tr>
+          <td>Header</td>
+          <td>Used for H1, Nav</td>
+          <td><code>      
+              &ltheader>&lt/header>
+          </code></td>
+          <td>Includes H1, Nav, Hero/Jumbotron. Also can be 1 per section per w3c.</td>
+      </tr>
+      <tr>
+          <td>Main</td>
+          <td>Used for Main Content, not DOM related</td>
+          <td><code>      
+              &ltmain>&lt/main>
+          </code></td>
+          <td>Should be Unique per page; not contain repeated across a set of documents/content; nav, sidebars, copyright, etc.</td>
+      </tr>   
+      <tr>
+          <td>Section</td>
+          <td>Used for whole sections of the webpage</td>
+          <td><code>      
+              &ltsection>&lt/section>
+          </code></td>
+          <td>May be several parts</td>
+      </tr>   
+      <tr>
+          <td>aside</td>
+          <td>Used for whole sections of the webpage</td>
+          <td><code>      
+              &ltaside>&lt/aside>
+          </code></td>
+          <td>The HTML &ltaside> element represents a portion of a document whose content is only indirectly related to the document's main content. Asides are frequently presented as sidebars or call-out boxes.</td>
+      </tr>
+      <tr>
+          <td>article</td>
+          <td>Used for independent content</td>
+          <td><code>      
+              &ltarticle>&lt/article>
+          </code></td>
+          <td></td>
+      </tr>
+      <tr>
+          <td>footer</td>
+          <td>Used for repeated footer</td>
+          <td><code>      
+              &ltfoort>&lt/footer>
+          </code></td>
+          <td>May involve 2nd Nav, copyright.</td>
+      </tr>
+  </tbody>
+  <thead><tr><td colspan="4">Forms <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form" target="_blank">Link to MDN</a></td></tr></thead>
+  <tbody>
+      <tr>
+          <td>label</td>
+          <td>Used for basically all inputs. No anchors or buttons inside.</td>
+          <td><code>      
+              &ltlabel for="tac"><br>
+                  &ltinput id="tac" type="checkbox" name="terms-and-conditions"><br>
+                  I agree to the Terms and Conditions<br>
+              &lt/label>
+                  <br> //OR
+                  &ltlabel for="cheese">Do you like cheese?&lt/label>
+                  &ltinput type="checkbox" name="cheese" id="cheese">
+          </code></td>
+          <td>You can Nest or Not!</td>
+      </tr>
+      <tr>
+          <td>input</td>
+          <td>Used for: Text, Email, checkbox, password, radio, submit, etc. </td>
+          <td><code>      
+              &ltlabel for="input">Input Text&lt/label> &ltinput> type="" name="" id="" special keyword: checked, required, etc. /> 
+          </code></td>
+          <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input" target="_blank">Link to MDN</a></td>
+      </tr>
+      <tr>
+          <td>Select (option)</td>
+          <td>Used for: Dropdown menu</td>
+          <td><pre><code>      
+              (LABEL FOR) 
+              &ltselect>
+                  &ltoption>1&lt/option>option>
+                  &ltoption>2&lt/option>option>
+                  &ltoption>3&lt/option>option>
+              &lt/select>
+          </code></pre class='codewhite'></td>
+          <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/option" target="_blank">Link to MDN</a></td>
+      </tr>
+      <tr>
+          <td>text area</td>
+          <td>Used for: longer input. Requires Label, Name.</td>
+          <td><code>      
+              &lttextarea>Text Here&lttextarea>
+          </code></td>
+          <td>Accepts cols, rows, required, placeholder, etc.</td>
+      </tr>
+      <tr>
+          <td>Fieldset, Legend</td>
+          <td>Used for: longer input. Requires Label, Name.</td>
+          <td><code>      
+              Form > Fieldset > &ltLegend>Choose...&lt/legend>, inputs, &ltFieldset> &Form>
+          </code></td>
+          <td>
+              <form>
+              <fieldset>
+                <legend>Choose your favorite monster</legend>
+            
+                <input type="radio" id="kraken" name="monster">
+                <label for="kraken">Kraken</label><br/>
+            
+                <input type="radio" id="sasquatch" name="monster">
+                <label for="sasquatch">Sasquatch</label><br/>
+            
+                <input type="radio" id="mothman" name="monster">
+                <label for="mothman">Mothman</label>
+              </fieldset>
+            </form></td>
+      </tr>
+  </tbody>
+</table>
+
+</html>
