@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap" rel="stylesheet"> 
+  <style>
+    p {
+      font-size: larger;
+      position: absolute;
+      left: 500px;
+      animation-duration: 3s;
+      animation-name: slideover;
+      animation-delay: 1s;
+      animation-fill-mode: forwards;
+      font-size: 2em;
+      font-weight: bolder;
+      font-family: 'Nothing You Could Do', cursive;
+    }
+    #w, #t, #c {
+      visibility: hidden;
+      font-size: 2em;
+      font-weight: 500;
+      position: absolute;
+      animation-duration: 2s;
+      animation-name: visible;
+      animation-delay: 3.9s;
+      animation-fill-mode: forwards;
+      font-family: 'Nothing You Could Do', cursive;
+    }
+
+    #w {
+      top: 40px;
+      left: 1px;
+    }
+
+    #t {
+      left: 113px;
+      top: 39px;
+    }
+
+    #c {
+      left: 221px;
+      top: 40px;
+    }
+
+    #x, #y, #z {
+    font-family: 'Nothing You Could Do', cursive;
+    animation-fill-mode: forwards;
+    font-size: 10em;
+    font-weight: 500;
+    position: absolute;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    }
+
+    #x {
+      top: 250px;
+      left: 20px;
+      animation-name: centerw;
+    }
+
+    #y {
+      left: 80px;
+      top: 270px;
+      animation-name: topt;
+    }
+
+    #z {
+      left: 160px;
+      top: 290px;
+      animation-name: bottomc;
+    }
+
+    @keyframes slideover {
+      0% {
+        left: 500px;
+        visibility: visible;
+      }
+
+      90% {
+        left: 0px;
+      }
+      
+      100% {
+        visibility: hidden;
+        left: 0px;
+      }
+    }
+
+    @keyframes visible {
+      0% {
+        visibility: hidden;
+      }
+      50% {
+        visibility: visible;
+      }
+      100% {
+        font-size: 6em;
+        visibility: visible;
+      }
+    }
+    @keyframes centerw {
+      100% {
+        left: 123px;
+        }
+    }
+
+    @keyframes topt {
+      100% {
+        left: 137px;
+        top: 209px;
+        }
+    }
+
+    
+    @keyframes bottomc {
+      100% {
+        left: 128px;
+        top: 285px;
+        }
+    }
+
+    
+
+  </style>
+</head>
+<body>
+  <span id="w">W</span>
+  <span id="t">T</span>
+  <span id="c">C</span>
+
+  <span id="x">W</span>
+  <span id="y">T</span>
+  <span id="z">C</span>
+  <p>Wildlife Trading Company</p>
+</body>
+</html>
