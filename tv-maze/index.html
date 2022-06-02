@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TV Search Engine</title>
+  <style>
+    img {
+      margin: 2%;
+      transition: box-shadow .75s ease, width .75s ease;
+      width: 210px;
+    }
+    img:hover {
+      width: 215px;
+      box-shadow: 5px 10px #888888;
+    }
+    li {
+      font-size: 20px;
+      font-weight: 700;
+    }
+    .visibility {
+      display: none;
+    }
+    .image-div {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .myClass {
+      flex-basis: 25%;
+    }
+    p {
+      text-align: center;
+      font-size: 20px;
+      font-weight: 700;
+      text-align: justify;
+    }
+  </style>
+</head>
+<body>
+  <h1>TV Show Search Engine</h1>
+  <form id="searchForm">
+    <input id="search-bar" type="text" name="query" placeholder="Search Any Show">
+    <input type="submit" name="submit" id="submit">
+  </form>
+    <div>
+      <h2 class="visibility">Top Results:</h2>
+      <ol id ="content">
+        
+      </ol>
+    </div>
+    <div class="image-div">
+
+    </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js" integrity="sha512-odNmoc1XJy5x1TMVMdC7EMs3IVdItLPlCeL5vSUPN2llYKMJ2eByTTAIiiuqLg+GdNr9hF6z81p27DArRFKT7A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="api-tv.js"></script>
+</body>
+</html>
