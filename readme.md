@@ -7,11 +7,11 @@
       <li><a href="/projects/steve-jobs-tribute/index.html">Steve Jobs Tribute Page</a></li>
       <li><a href="/projects/projects/html-cheatsheet/cheatsheet.html">HTML Tag Master Cheat Sheet</a></li>
       <li><a href="/projects/teacozy/teacozy.html">Tea Shop</a></li>
-      <li><a href="/projects/wtc-products/product.html"></a>WTC Demo Store Page</li>
-      <li><a href="/projects/portfolio-site/portfolio.html"></a>Demo Portfolio Page Design</li>
-      <li><a href="/projects/form-page/forms.html"></a>HTML Form Page</li>
-      <li><a href="/projects/art-gallery/art.html"></a>Art Gallery w/ CSS Frames</li>
-      <li><a href="/projects/aria-Technical/techdoc.html"></a>ARIA Web Accessability Tips</li>
+      <li><a href="/projects/wtc-products/product.html">WTC Demo Store Page</a></li>
+      <li><a href="/projects/portfolio-site/portfolio.html">Demo Portfolio Page Design</a></li>
+      <li><a href="/projects/form-page/forms.html">HTML Form Page</a></li>
+      <li><a href="/projects/art-gallery/art.html">Art Gallery w/ CSS Frames</a></li>
+      <li><a href="/projects/aria-Technical/techdoc.html">ARIA Web Accessability Tips</a></li>
     </ul>
   <h2>Javascript Projects & APIs</h2>
   <hr>
