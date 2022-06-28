@@ -28,8 +28,11 @@
       <li><a href="/projects/credit-card-validator.js">Credit Card Number Validator</a></li>
     </ul>
   <h2>Certifications</h2>
+   [CodeCademy](https://www.codecademy.com)
   <hr>
   <h2>Resume & Experience</h2>
+   [Big Wave Bedding Co. - Square Online](https://www.bigwavebeddingco.com)
+   [Waldport Family Cuts - Square Online](http://www.waldportfamilycuts.net)
   <hr>
   </body> 
 </html>
