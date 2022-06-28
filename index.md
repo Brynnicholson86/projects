@@ -1,5 +1,6 @@
 #Bryn Nicholson's GitHub Project Portfolio
-
+<html>
+  <body>
   <h2>HTML-CSS Projects</h2>
   <hr>
     <ul>
@@ -30,3 +31,5 @@
   <hr>
   <h2>Resume & Experience</h2>
   <hr>
+  </body> 
+</html>
