@@ -1,10 +1,10 @@
-#Bryn Nicholson's GitHub Project Portfolio
+Bryn Nicholson's GitHub Project Portfolio
 <html>
   <body>
   <h2>HTML-CSS Projects</h2>
   <hr>
     <ul>
-      <li><a href="/projects/WTC-animation-Logo.html"></a>Animated Company Logos</li>
+      <li><a href="/projects/WTC-animation-Logo.html">Animated Company Logos</a></li>
       <li><a href="/projects/steve-jobs-tribute/index.html">Steve Jobs Tribute Page</a></li>
       <li><a href="/projects/projects/html-cheatsheet/cheatsheet.html">HTML Tag Master Cheat Sheet</a></li>
       <li><a href="/projects/teacozy/teacozy.html">Tea Shop</a></li>
@@ -25,14 +25,26 @@
     <hr>
     <ul>
       <li><a href="/projects/substringlengthfunc.js"> String Letter Position Length Counter</a></li>
-      <li><a href="/projects/credit-card-validator.js">Credit Card Number Validator</a></li>
+      <li><a href="/projects/credit-card-validator1.js">Credit Card Number Validator Project</a></li>
+      <li><a href="/projects/shift-Cipher.js">Shiftable Cipher Project</a></li>
     </ul>
   <h2>Certifications</h2>
-   [CodeCademy](https://www.codecademy.com)
+    <hr>
+    <ul>
+      <p>Codecademy Certifications</p>
+      <li><a href="/projects/cssCodecademy.pdf">CSS Certification</a></li>
+      <li><a href="/projects/gitCodecademy.pdf">Github & Command Line Certification</a></li>
+      <li><a href="/projects/jssintermediate_Codecademy.pdf">Intermediate Javascript Certification</a></li>
+      <li><a href="/projects/jqueryCodecademy.pdf">jQuery Certification</a></li>
+    </ul>
   <hr>
   <h2>Resume & Experience</h2>
-   [Big Wave Bedding Co. - Square Online](https://www.bigwavebeddingco.com)
-   [Waldport Family Cuts - Square Online](http://www.waldportfamilycuts.net)
-  <hr>
+    <hr>
+    <ul>
+      <li><a href="https://www.muzemerch.com"> MuzeMerch - I am the Website Administrator. We operate the retail operation for leading Zoos, Aquariums, Museums, Science Centers, and more!</a></li>
+      <li><a href="https://www.bigwavebeddingco.com">Big Wave Bedding Co. - Square Online</a></li>
+      <li><a href="http://www.waldportfamilycuts.net">Waldport Family Cuts - Square Online</a></li>
+    </ul>
+
   </body> 
 </html>
